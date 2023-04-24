@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459499E29F251B100A2CF95 /* AppDelegate.swift */; };
 		045949A129F251B100A2CF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949A029F251B100A2CF95 /* SceneDelegate.swift */; };
-		045949A329F251B100A2CF95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949A229F251B100A2CF95 /* ViewController.swift */; };
 		045949A629F251B100A2CF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045949A429F251B100A2CF95 /* Main.storyboard */; };
 		045949A929F251B100A2CF95 /* PinkBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045949A729F251B100A2CF95 /* PinkBook.xcdatamodeld */; };
 		045949AB29F251B200A2CF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045949AA29F251B200A2CF95 /* Assets.xcassets */; };
 		045949AE29F251B200A2CF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045949AC29F251B200A2CF95 /* LaunchScreen.storyboard */; };
+		045949D029F25DC900A2CF95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949CF29F25DC900A2CF95 /* HomeViewController.swift */; };
+		045949D329F25E2200A2CF95 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949D229F25E2200A2CF95 /* BaseViewController.swift */; };
+		045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949D429F25E8800A2CF95 /* BaseViewModel.swift */; };
+		045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949D629F25EED00A2CF95 /* ColorExtension.swift */; };
+		045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949D829F25F5D00A2CF95 /* FontExtension.swift */; };
+		045949DB29F26F6500A2CF95 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949DA29F26F6500A2CF95 /* FollowViewController.swift */; };
+		045949DD29F26FB000A2CF95 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949DC29F26FB000A2CF95 /* DiscoverViewController.swift */; };
+		045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */; };
+		045949E129F299C700A2CF95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E029F299C700A2CF95 /* HomeModel.swift */; };
+		045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E229F6527900A2CF95 /* ListContainerViewController.swift */; };
 		FC05F3BF14E7C7977A277308 /* Pods_PinkBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +30,21 @@
 		0459499B29F251B100A2CF95 /* PinkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0459499E29F251B100A2CF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045949A029F251B100A2CF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		045949A229F251B100A2CF95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		045949A529F251B100A2CF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045949A829F251B100A2CF95 /* PinkBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinkBook.xcdatamodel; sourceTree = "<group>"; };
 		045949AA29F251B200A2CF95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045949AD29F251B200A2CF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045949AF29F251B200A2CF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045949CF29F25DC900A2CF95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		045949D229F25E2200A2CF95 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		045949D429F25E8800A2CF95 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		045949D629F25EED00A2CF95 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		045949D829F25F5D00A2CF95 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		045949DA29F26F6500A2CF95 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		045949DC29F26FB000A2CF95 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		045949E029F299C700A2CF95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		045949E229F6527900A2CF95 /* ListContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerViewController.swift; sourceTree = "<group>"; };
 		1B6E707C486A179323367821 /* Pods-PinkBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.release.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.release.xcconfig"; sourceTree = "<group>"; };
 		899780B03B28B829C64461BB /* Pods-PinkBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.debug.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,9 +83,14 @@
 		0459499D29F251B100A2CF95 /* PinkBook */ = {
 			isa = PBXGroup;
 			children = (
+				045949D129F25DD300A2CF95 /* Common */,
+				045949B629F259CB00A2CF95 /* Home */,
+				045949B729F259D100A2CF95 /* Cart */,
+				045949B829F259D900A2CF95 /* Plus */,
+				045949B929F259E200A2CF95 /* Message */,
+				045949B529F259C100A2CF95 /* Me */,
 				0459499E29F251B100A2CF95 /* AppDelegate.swift */,
 				045949A029F251B100A2CF95 /* SceneDelegate.swift */,
-				045949A229F251B100A2CF95 /* ViewController.swift */,
 				045949A429F251B100A2CF95 /* Main.storyboard */,
 				045949AA29F251B200A2CF95 /* Assets.xcassets */,
 				045949AC29F251B200A2CF95 /* LaunchScreen.storyboard */,
@@ -75,6 +98,218 @@
 				045949A729F251B100A2CF95 /* PinkBook.xcdatamodeld */,
 			);
 			path = PinkBook;
+			sourceTree = "<group>";
+		};
+		045949B529F259C100A2CF95 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				045949CE29F25B1200A2CF95 /* Controller */,
+				045949CD29F25B0C00A2CF95 /* Model */,
+				045949CC29F25B0500A2CF95 /* ViewModel */,
+				045949CB29F25B0000A2CF95 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		045949B629F259CB00A2CF95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				045949BA29F25A1800A2CF95 /* Controller */,
+				045949BD29F25A3E00A2CF95 /* Model */,
+				045949BC29F25A3600A2CF95 /* ViewModel */,
+				045949BB29F25A2300A2CF95 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		045949B729F259D100A2CF95 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				045949C129F25AB100A2CF95 /* Controller */,
+				045949C029F25AAA00A2CF95 /* Model */,
+				045949BF29F25AA300A2CF95 /* ViewModel */,
+				045949BE29F25A9C00A2CF95 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		045949B829F259D900A2CF95 /* Plus */ = {
+			isa = PBXGroup;
+			children = (
+				045949C529F25AD300A2CF95 /* Controller */,
+				045949C429F25ACD00A2CF95 /* Model */,
+				045949C329F25AC400A2CF95 /* ViewModel */,
+				045949C229F25ABE00A2CF95 /* View */,
+			);
+			path = Plus;
+			sourceTree = "<group>";
+		};
+		045949B929F259E200A2CF95 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				045949CA29F25AF700A2CF95 /* Controller */,
+				045949C929F25AF200A2CF95 /* Model */,
+				045949C829F25AEB00A2CF95 /* ViewModel */,
+				045949C729F25AE500A2CF95 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		045949BA29F25A1800A2CF95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045949CF29F25DC900A2CF95 /* HomeViewController.swift */,
+				045949DA29F26F6500A2CF95 /* FollowViewController.swift */,
+				045949DC29F26FB000A2CF95 /* DiscoverViewController.swift */,
+				045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */,
+				045949E229F6527900A2CF95 /* ListContainerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045949BB29F25A2300A2CF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045949BC29F25A3600A2CF95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045949BD29F25A3E00A2CF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045949E029F299C700A2CF95 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045949BE29F25A9C00A2CF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045949BF29F25AA300A2CF95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045949C029F25AAA00A2CF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045949C129F25AB100A2CF95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045949C229F25ABE00A2CF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045949C329F25AC400A2CF95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045949C429F25ACD00A2CF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045949C529F25AD300A2CF95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045949C729F25AE500A2CF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045949C829F25AEB00A2CF95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045949C929F25AF200A2CF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045949CA29F25AF700A2CF95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045949CB29F25B0000A2CF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045949CC29F25B0500A2CF95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045949CD29F25B0C00A2CF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045949CE29F25B1200A2CF95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045949D129F25DD300A2CF95 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				045949D229F25E2200A2CF95 /* BaseViewController.swift */,
+				045949D429F25E8800A2CF95 /* BaseViewModel.swift */,
+				045949D629F25EED00A2CF95 /* ColorExtension.swift */,
+				045949D829F25F5D00A2CF95 /* FontExtension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5E68D27AB4E59F143BD3CEE1 /* Frameworks */ = {
@@ -91,7 +326,6 @@
 				899780B03B28B829C64461BB /* Pods-PinkBook.debug.xcconfig */,
 				1B6E707C486A179323367821 /* Pods-PinkBook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,10 +444,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045949A329F251B100A2CF95 /* ViewController.swift in Sources */,
+				045949D329F25E2200A2CF95 /* BaseViewController.swift in Sources */,
 				0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */,
+				045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */,
+				045949DB29F26F6500A2CF95 /* FollowViewController.swift in Sources */,
 				045949A929F251B100A2CF95 /* PinkBook.xcdatamodeld in Sources */,
 				045949A129F251B100A2CF95 /* SceneDelegate.swift in Sources */,
+				045949D029F25DC900A2CF95 /* HomeViewController.swift in Sources */,
+				045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */,
+				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,
+				045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */,
+				045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */,
+				045949DD29F26FB000A2CF95 /* DiscoverViewController.swift in Sources */,
+				045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,11 +607,13 @@
 				DEVELOPMENT_TEAM = 7DR2VQYR3G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinkBook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小红书ol";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,9 +621,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidixiaoxiong.PinkBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,11 +641,13 @@
 				DEVELOPMENT_TEAM = 7DR2VQYR3G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinkBook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小红书ol";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,9 +655,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidixiaoxiong.PinkBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

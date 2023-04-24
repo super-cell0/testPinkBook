@@ -1,24 +1,80 @@
 PODS:
+  - CombineCocoa (0.4.1)
+  - DZNEmptyDataSet (1.8.1)
+  - JXSegmentedView (1.3.0)
+  - Kingfisher (7.6.2)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
   - PryntTrimmerView (4.0.2)
+  - SnapKit (5.6.0)
   - SteviaLayout (4.7.3)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
   - YPImagePicker (5.2.1):
     - PryntTrimmerView (= 4.0.2)
     - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
+  - CombineCocoa
+  - DZNEmptyDataSet
+  - JXSegmentedView
+  - Kingfisher (~> 7.0)
+  - MBProgressHUD (~> 1.2.0)
+  - MJRefresh
+  - SnapKit (~> 5.6.0)
+  - SwifterSwift
   - YPImagePicker
 
 SPEC REPOS:
   trunk:
+    - CombineCocoa
+    - DZNEmptyDataSet
+    - JXSegmentedView
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
     - PryntTrimmerView
+    - SnapKit
     - SteviaLayout
+    - SwifterSwift
     - YPImagePicker
 
 SPEC CHECKSUMS:
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
 
-PODFILE CHECKSUM: 68bc6d294ff1eca5ded1414e880407e77a4519e3
+PODFILE CHECKSUM: cce150b862149f6e688eab644228a49db9c2884c
 
 COCOAPODS: 1.11.3
