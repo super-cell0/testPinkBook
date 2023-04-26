@@ -14,9 +14,9 @@ enum HomesCategory: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .follow: return "关注"
-        case .discover: return "发现"
-        case .nearby: return "附近"
+        case .follow: return "Follow"
+        case .discover: return "Discover"
+        case .nearby: return "Nearby"
         }
     }
 }

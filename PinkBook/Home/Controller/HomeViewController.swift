@@ -22,9 +22,9 @@ class HomeViewController: BaseViewController {
         super.setupView()
         
         segmentDataSource.titles = HomesCategory.allCases.map(\.title)
-        segmentDataSource.titleSelectedColor = .mainColor
+        segmentDataSource.titleSelectedColor = .label
         segmentDataSource.titleNormalFont = .myFont(ofSize: 15, weight: .bold)
-        segmentDataSource.titleNormalColor = UIColor.label
+        segmentDataSource.titleNormalColor = UIColor.opaqueSeparator
         segmentDataSource.isTitleColorGradientEnabled = true
         segmentDataSource.isItemSpacingAverageEnabled = true
         

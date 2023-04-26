@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="-1706" y="213"/>
         </scene>
-        <!--消息-->
+        <!--Message-->
         <scene sceneID="Rd9-bY-TPc">
             <objects>
                 <viewController id="KMH-Rf-CAB" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="8xH-Pd-TQh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="message" catalog="system" id="v7C-LQ-YhI"/>
+                    <tabBarItem key="tabBarItem" title="Message" image="message" catalog="system" id="v7C-LQ-YhI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR4-ji-zDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="614.50381679389307" y="-2169.0140845070423"/>
         </scene>
-        <!--商城-->
+        <!--Cart-->
         <scene sceneID="2P7-Ye-R01">
             <objects>
                 <viewController id="GUT-0X-YvY" sceneMemberID="viewController">
@@ -72,13 +72,13 @@
                         <viewLayoutGuide key="safeArea" id="3vh-uT-UAe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="商城" image="cart" catalog="system" id="Xji-5z-DvT"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="Xji-5z-DvT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d54-mp-vh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-312" y="-1469"/>
         </scene>
-        <!--生活-->
+        <!--Plus-->
         <scene sceneID="7Mb-Or-5d3">
             <objects>
                 <viewController id="472-HB-fTe" sceneMemberID="viewController">
@@ -88,13 +88,13 @@
                         <viewLayoutGuide key="safeArea" id="iYV-71-JN6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="生活" image="plus.rectangle" catalog="system" id="DFu-jS-dBW"/>
+                    <tabBarItem key="tabBarItem" title="Plus" image="plus.rectangle" catalog="system" id="DFu-jS-dBW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VF0-BR-SMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-312" y="-754"/>
         </scene>
-        <!--我的-->
+        <!--Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
@@ -104,17 +104,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的" image="person" catalog="system" id="Bb4-xe-rKe"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" id="Bb4-xe-rKe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-285" y="644"/>
         </scene>
-        <!--主页-->
+        <!--List-->
         <scene sceneID="5KA-xt-M2V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2YS-vx-Kn4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="主页" image="list.bullet.rectangle.portrait" catalog="system" id="CfA-ey-cdD"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list.bullet.rectangle.portrait" catalog="system" id="CfA-ey-cdD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g8I-2V-jHP">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

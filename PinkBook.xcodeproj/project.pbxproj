@@ -23,6 +23,8 @@
 		045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */; };
 		045949E129F299C700A2CF95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E029F299C700A2CF95 /* HomeModel.swift */; };
 		045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E229F6527900A2CF95 /* ListContainerViewController.swift */; };
+		0482477B29F8D06000843EAB /* ListContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482477A29F8D06000843EAB /* ListContainerCollectionViewCell.swift */; };
+		0482477D29F8D25300843EAB /* Constents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482477C29F8D25300843EAB /* Constents.swift */; };
 		FC05F3BF14E7C7977A277308 /* Pods_PinkBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		045949E029F299C700A2CF95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		045949E229F6527900A2CF95 /* ListContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerViewController.swift; sourceTree = "<group>"; };
+		0482477A29F8D06000843EAB /* ListContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		0482477C29F8D25300843EAB /* Constents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constents.swift; sourceTree = "<group>"; };
 		1B6E707C486A179323367821 /* Pods-PinkBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.release.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.release.xcconfig"; sourceTree = "<group>"; };
 		899780B03B28B829C64461BB /* Pods-PinkBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.debug.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +174,7 @@
 		045949BB29F25A2300A2CF95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0482477A29F8D06000843EAB /* ListContainerCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				045949D429F25E8800A2CF95 /* BaseViewModel.swift */,
 				045949D629F25EED00A2CF95 /* ColorExtension.swift */,
 				045949D829F25F5D00A2CF95 /* FontExtension.swift */,
+				0482477C29F8D25300843EAB /* Constents.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -445,11 +451,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				045949D329F25E2200A2CF95 /* BaseViewController.swift in Sources */,
+				0482477D29F8D25300843EAB /* Constents.swift in Sources */,
 				0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */,
 				045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */,
 				045949DB29F26F6500A2CF95 /* FollowViewController.swift in Sources */,
 				045949A929F251B100A2CF95 /* PinkBook.xcdatamodeld in Sources */,
 				045949A129F251B100A2CF95 /* SceneDelegate.swift in Sources */,
+				0482477B29F8D06000843EAB /* ListContainerCollectionViewCell.swift in Sources */,
 				045949D029F25DC900A2CF95 /* HomeViewController.swift in Sources */,
 				045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */,
 				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,

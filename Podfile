@@ -15,6 +15,7 @@ target 'PinkBook' do
   pod 'SwifterSwift'
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'Kingfisher', '~> 7.0'
+  pod 'CHTCollectionViewWaterfallLayout'
 
 end
 

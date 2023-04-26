@@ -58,9 +58,9 @@ class DiscoverViewController: BaseViewController {
         super.bindView()
                 
         segmentDataSource.titles = DiscoverCategory.allCases.map(\.title)
-        segmentDataSource.titleSelectedColor = .mainColor
+        segmentDataSource.titleSelectedColor = .label
         segmentDataSource.titleNormalFont = .myFont(ofSize: 14, weight: .bold)
-        segmentDataSource.titleNormalColor = .label
+        segmentDataSource.titleNormalColor = .opaqueSeparator
         segmentDataSource.isTitleColorGradientEnabled = true
         segmentDataSource.isItemSpacingAverageEnabled = true
         
@@ -74,10 +74,10 @@ class DiscoverViewController: BaseViewController {
         segmentTitleView.addSubview(segmentView)
         segmentView.translatesAutoresizingMaskIntoConstraints = false
         
-        let listContainer = JXSegmentedListContainerView(dataSource: self)
-        segmentView.listContainer = listContainer
-        view.addSubview(listContainer)
-        listContainer.translatesAutoresizingMaskIntoConstraints = false
+        let listContainerView = JXSegmentedListContainerView(dataSource: self)
+        segmentView.listContainer = listContainerView
+        view.addSubview(listContainerView)
+        listContainerView.translatesAutoresizingMaskIntoConstraints = false
                 
         NSLayoutConstraint.activate([
             segmentTitleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
@@ -90,10 +90,10 @@ class DiscoverViewController: BaseViewController {
             segmentView.leadingAnchor.constraint(equalTo: self.segmentTitleView.leadingAnchor, constant: 0),
             segmentView.trailingAnchor.constraint(equalTo: self.segmentTitleView.trailingAnchor, constant: 0),
 
-            listContainer.topAnchor.constraint(equalTo: self.segmentTitleView.bottomAnchor, constant: 0),
-            listContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            listContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            listContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            listContainerView.topAnchor.constraint(equalTo: self.segmentTitleView.bottomAnchor, constant: 0),
+            listContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            listContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            listContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
         ])
         
     }
