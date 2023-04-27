@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="614.50381679389307" y="-2169.0140845070423"/>
         </scene>
-        <!--Cart-->
+        <!--Shopping-->
         <scene sceneID="2P7-Ye-R01">
             <objects>
                 <viewController id="GUT-0X-YvY" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="3vh-uT-UAe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="Xji-5z-DvT"/>
+                    <tabBarItem key="tabBarItem" title="Shopping" image="cart" catalog="system" id="Xji-5z-DvT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d54-mp-vh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

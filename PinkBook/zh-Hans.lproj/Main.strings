@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Me"; ObjectID = "Bb4-xe-rKe"; */
+"Bb4-xe-rKe.title" = "Me";
+
+/* Class = "UITabBarItem"; title = "List"; ObjectID = "CfA-ey-cdD"; */
+"CfA-ey-cdD.title" = "List";
+
+/* Class = "UITabBarItem"; title = "Plus"; ObjectID = "DFu-jS-dBW"; */
+"DFu-jS-dBW.title" = "Plus";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "Xji-5z-DvT"; */
+"Xji-5z-DvT.title" = "Shopping";
+
+/* Class = "UITabBarItem"; title = "Message"; ObjectID = "v7C-LQ-YhI"; */
+"v7C-LQ-YhI.title" = "Message";

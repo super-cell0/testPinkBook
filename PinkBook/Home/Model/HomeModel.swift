@@ -14,7 +14,7 @@ enum HomesCategory: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .follow: return "Follow"
+        case .follow: return NSLocalizedString("Follow", comment: "首页的关注标签")
         case .discover: return "Discover"
         case .nearby: return "Nearby"
         }
