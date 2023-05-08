@@ -26,8 +26,14 @@
 		0462731C29FA3BBE006273EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0462731B29FA3BBE006273EB /* README.md */; };
 		0462732529FA496D006273EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732729FA496D006273EB /* InfoPlist.strings */; };
 		0462732829FA4978006273EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732A29FA4978006273EB /* Localizable.strings */; };
+		0462732C29FA4BF6006273EB /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462732B29FA4BF6006273EB /* BaseTabBarViewController.swift */; };
+		0462732E29FA4D84006273EB /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462732D29FA4D84006273EB /* PlusViewController.swift */; };
 		0482477B29F8D06000843EAB /* ListContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482477A29F8D06000843EAB /* ListContainerCollectionViewCell.swift */; };
 		0482477D29F8D25300843EAB /* Constents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482477C29F8D25300843EAB /* Constents.swift */; };
+		04965AAD2A04C62D006D48EA /* ExtensionAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AAC2A04C62D006D48EA /* ExtensionAll.swift */; };
+		04965AAF2A04E80D006D48EA /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */; };
+		04965AB12A04E99C006D48EA /* NoteEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AB02A04E99C006D48EA /* NoteEditCell.swift */; };
+		04965AB32A06250D006D48EA /* NoteEditReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AB22A06250D006D48EA /* NoteEditReusableView.swift */; };
 		FC05F3BF14E7C7977A277308 /* Pods_PinkBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +61,14 @@
 		0462731E29FA3D96006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0462732629FA496D006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0462732929FA4978006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0462732B29FA4BF6006273EB /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		0462732D29FA4D84006273EB /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
 		0482477A29F8D06000843EAB /* ListContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerCollectionViewCell.swift; sourceTree = "<group>"; };
 		0482477C29F8D25300843EAB /* Constents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constents.swift; sourceTree = "<group>"; };
+		04965AAC2A04C62D006D48EA /* ExtensionAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAll.swift; sourceTree = "<group>"; };
+		04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditViewController.swift; sourceTree = "<group>"; };
+		04965AB02A04E99C006D48EA /* NoteEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditCell.swift; sourceTree = "<group>"; };
+		04965AB22A06250D006D48EA /* NoteEditReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditReusableView.swift; sourceTree = "<group>"; };
 		1B6E707C486A179323367821 /* Pods-PinkBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.release.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.release.xcconfig"; sourceTree = "<group>"; };
 		899780B03B28B829C64461BB /* Pods-PinkBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.debug.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +248,8 @@
 		045949C229F25ABE00A2CF95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04965AB02A04E99C006D48EA /* NoteEditCell.swift */,
+				04965AB22A06250D006D48EA /* NoteEditReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +271,8 @@
 		045949C529F25AD300A2CF95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0462732D29FA4D84006273EB /* PlusViewController.swift */,
+				04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,9 +338,11 @@
 			children = (
 				045949D229F25E2200A2CF95 /* BaseViewController.swift */,
 				045949D429F25E8800A2CF95 /* BaseViewModel.swift */,
+				0482477C29F8D25300843EAB /* Constents.swift */,
 				045949D629F25EED00A2CF95 /* ColorExtension.swift */,
 				045949D829F25F5D00A2CF95 /* FontExtension.swift */,
-				0482477C29F8D25300843EAB /* Constents.swift */,
+				0462732B29FA4BF6006273EB /* BaseTabBarViewController.swift */,
+				04965AAC2A04C62D006D48EA /* ExtensionAll.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -469,17 +487,23 @@
 				0482477D29F8D25300843EAB /* Constents.swift in Sources */,
 				0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */,
 				045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */,
+				0462732E29FA4D84006273EB /* PlusViewController.swift in Sources */,
 				045949DB29F26F6500A2CF95 /* FollowViewController.swift in Sources */,
+				04965AAF2A04E80D006D48EA /* NoteEditViewController.swift in Sources */,
 				045949A929F251B100A2CF95 /* PinkBook.xcdatamodeld in Sources */,
+				04965AAD2A04C62D006D48EA /* ExtensionAll.swift in Sources */,
 				045949A129F251B100A2CF95 /* SceneDelegate.swift in Sources */,
 				0482477B29F8D06000843EAB /* ListContainerCollectionViewCell.swift in Sources */,
 				045949D029F25DC900A2CF95 /* HomeViewController.swift in Sources */,
 				045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */,
+				04965AB12A04E99C006D48EA /* NoteEditCell.swift in Sources */,
 				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,
 				045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */,
 				045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */,
 				045949DD29F26FB000A2CF95 /* DiscoverViewController.swift in Sources */,
 				045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */,
+				0462732C29FA4BF6006273EB /* BaseTabBarViewController.swift in Sources */,
+				04965AB32A06250D006D48EA /* NoteEditReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

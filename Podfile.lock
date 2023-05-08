@@ -9,6 +9,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - PryntTrimmerView (4.0.2)
+  - SKPhotoBrowser (7.1.0)
   - SnapKit (5.6.0)
   - SteviaLayout (4.7.3)
   - SwifterSwift (5.2.0):
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - Kingfisher (~> 7.0)
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
+  - SKPhotoBrowser
   - SnapKit (~> 5.6.0)
   - SwifterSwift
   - YPImagePicker
@@ -62,6 +64,7 @@ SPEC REPOS:
     - MBProgressHUD
     - MJRefresh
     - PryntTrimmerView
+    - SKPhotoBrowser
     - SnapKit
     - SteviaLayout
     - SwifterSwift
@@ -76,11 +79,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
 
-PODFILE CHECKSUM: 330a4a0588825043b42c44897bf689a7af95624c
+PODFILE CHECKSUM: df7c5658e715afb4ec68c89aeaba1b80e33863e1
 
 COCOAPODS: 1.11.3

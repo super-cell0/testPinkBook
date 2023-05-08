@@ -16,6 +16,7 @@ target 'PinkBook' do
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'Kingfisher', '~> 7.0'
   pod 'CHTCollectionViewWaterfallLayout'
+  pod 'SKPhotoBrowser'
 
 end
 
