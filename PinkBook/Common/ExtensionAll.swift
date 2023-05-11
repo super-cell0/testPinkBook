@@ -15,7 +15,17 @@ extension Bundle {
         } else {
             return infoDictionary!["CFBundleDisplayName"] as! String
         }
-
+    }
+    
+    //static可以修饰class/struct/enum的存储属性、计算属性、方法 类方法不能继承
+    //class能修饰类的计算属性和方法 类方法可以继承
+    //在protocol中要用static
+    static func loadView<T>(fromNib: String, type: T.Type) -> T {
+        if let view = Bundle.main.loadNibNamed(fromNib, owner: nil)?.first as? T {
+            return view
+        } else {
+            fatalError("加载\(type)失败🤯")
+        }
     }
 }
 
@@ -62,3 +72,20 @@ struct HUD {
     }
 }
 
+extension UIViewController {
+    
+    ///点击空白处关闭键盘
+    func hideKeyboardOnTapped() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension UITextField {
+    var unwrappedText: String { text ?? ""}
+}

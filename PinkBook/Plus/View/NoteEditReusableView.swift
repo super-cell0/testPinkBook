@@ -14,7 +14,6 @@ class NoteEditReusableView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        addButton.layer.cornerRadius = 10
         addButton.layer.borderWidth = 1
         addButton.layer.borderColor = UIColor.opaqueSeparator.cgColor
 

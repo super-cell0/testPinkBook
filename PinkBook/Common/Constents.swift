@@ -35,3 +35,6 @@ let photos = [
     UIImage(named: "19")!,
     UIImage(named: "cqs")!,
 ]
+
+let kMaxNoteEditTitleCount = 20
+let kMaxNoteEditTextViewCount = 500
