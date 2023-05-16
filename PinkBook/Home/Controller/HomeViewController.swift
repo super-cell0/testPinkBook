@@ -36,12 +36,11 @@ class HomeViewController: BaseViewController {
         
         segmentView.backgroundColor = .white
         segmentView.defaultSelectedIndex = 1
-        segmentView.dataSource = segmentDataSource
         segmentView.indicators = [indicatorView]
         segmentView.frame.size = CGSize(width: UIScreen.main.bounds.size.width - 110, height: UIScreen.main.bounds.size.height)
         navigationItem.titleView = segmentView
-        navigationItem.titleView?.backgroundColor = .clear
-        
+        segmentView.dataSource = segmentDataSource
+
         let listContainer = JXSegmentedListContainerView(dataSource: self)
         segmentView.listContainer = listContainer
         view.addSubview(listContainer)

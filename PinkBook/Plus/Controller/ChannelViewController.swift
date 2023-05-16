@@ -14,8 +14,9 @@ class ChannelViewController: BaseViewController {
     @IBOutlet weak var listView: UIView!
     
     let segmentView = JXSegmentedView()
-    let segmentDataSource = JXSegmentedTitleDataSource()
-        
+    //let segmentDataSource = JXSegmentedTitleDataSource()
+    let segmentDataSource = JXSegmentedTitleImageDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,14 +31,22 @@ class ChannelViewController: BaseViewController {
     override func bindView() {
         super.bindView()
         
+        segmentDataSource.imageSize = CGSize(width: 20, height: 20)
+        segmentDataSource.normalImageInfos = ["10", "9", "8", "7", "6", "5", "4", "3"]
+        segmentDataSource.loadImageClosure = {imageView, normalImageInfo in
+            imageView.image = UIImage(named: normalImageInfo)
+        }
+        segmentDataSource.titleImageType = .rightImage
+        segmentView.backgroundColor = .mainColor
+
         segmentDataSource.titles = channels
         segmentDataSource.titleSelectedColor = .label
-        segmentDataSource.titleNormalColor = .opaqueSeparator
+        //segmentDataSource.titleNormalColor = .opaqueSeparator
         segmentDataSource.titleNormalFont = .myFont(ofSize: 14, weight: .bold)
         segmentDataSource.isTitleColorGradientEnabled = true
         segmentDataSource.isItemSpacingAverageEnabled = true
         
-        segmentView.backgroundColor = .mainColor
+        
         segmentView.defaultSelectedIndex = 0
         segmentView.dataSource = segmentDataSource
         
