@@ -11,6 +11,8 @@
 		0452C9982A0B5EC9001C5275 /* LimitedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452C9972A0B5EC9001C5275 /* LimitedTextField.swift */; };
 		0452C99A2A0CC505001C5275 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0452C9992A0CC505001C5275 /* TextViewIAView.xib */; };
 		0452C99C2A0CC57A001C5275 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452C99B2A0CC57A001C5275 /* TextViewIAView.swift */; };
+		0452C99E2A0CE56D001C5275 /* PlusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452C99D2A0CE56D001C5275 /* PlusModel.swift */; };
+		0452C9A02A0CE9A6001C5275 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452C99F2A0CE9A6001C5275 /* ChannelViewController.swift */; };
 		0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459499E29F251B100A2CF95 /* AppDelegate.swift */; };
 		045949A129F251B100A2CF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949A029F251B100A2CF95 /* SceneDelegate.swift */; };
 		045949A629F251B100A2CF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045949A429F251B100A2CF95 /* Main.storyboard */; };
@@ -38,6 +40,10 @@
 		04965AAF2A04E80D006D48EA /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */; };
 		04965AB12A04E99C006D48EA /* NoteEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AB02A04E99C006D48EA /* NoteEditCell.swift */; };
 		04965AB32A06250D006D48EA /* NoteEditReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04965AB22A06250D006D48EA /* NoteEditReusableView.swift */; };
+		04C04CBE2A124BF500103532 /* ListChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04CBD2A124BF500103532 /* ListChannelViewController.swift */; };
+		04C04CC02A124E6100103532 /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04CBF2A124E6100103532 /* ChannelCollectionViewCell.swift */; };
+		04C04CC22A13822D00103532 /* ListChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04CC12A13822D00103532 /* ListChannelTableViewController.swift */; };
+		04C04CC42A13883B00103532 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04CC32A13883B00103532 /* ChannelTableViewCell.swift */; };
 		FC05F3BF14E7C7977A277308 /* Pods_PinkBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,8 @@
 		0452C9972A0B5EC9001C5275 /* LimitedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTextField.swift; sourceTree = "<group>"; };
 		0452C9992A0CC505001C5275 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
 		0452C99B2A0CC57A001C5275 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
+		0452C99D2A0CE56D001C5275 /* PlusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusModel.swift; sourceTree = "<group>"; };
+		0452C99F2A0CE9A6001C5275 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		0459499B29F251B100A2CF95 /* PinkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0459499E29F251B100A2CF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045949A029F251B100A2CF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 		04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditViewController.swift; sourceTree = "<group>"; };
 		04965AB02A04E99C006D48EA /* NoteEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditCell.swift; sourceTree = "<group>"; };
 		04965AB22A06250D006D48EA /* NoteEditReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditReusableView.swift; sourceTree = "<group>"; };
+		04C04CBD2A124BF500103532 /* ListChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChannelViewController.swift; sourceTree = "<group>"; };
+		04C04CBF2A124E6100103532 /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		04C04CC12A13822D00103532 /* ListChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChannelTableViewController.swift; sourceTree = "<group>"; };
+		04C04CC32A13883B00103532 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
 		1B6E707C486A179323367821 /* Pods-PinkBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.release.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.release.xcconfig"; sourceTree = "<group>"; };
 		899780B03B28B829C64461BB /* Pods-PinkBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.debug.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A2BCFB95186FB0A84CC12F1D /* Pods_PinkBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinkBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,6 +272,8 @@
 				04965AB22A06250D006D48EA /* NoteEditReusableView.swift */,
 				0452C99B2A0CC57A001C5275 /* TextViewIAView.swift */,
 				0452C9992A0CC505001C5275 /* TextViewIAView.xib */,
+				04C04CBF2A124E6100103532 /* ChannelCollectionViewCell.swift */,
+				04C04CC32A13883B00103532 /* ChannelTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +288,7 @@
 		045949C429F25ACD00A2CF95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0452C99D2A0CE56D001C5275 /* PlusModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +298,9 @@
 			children = (
 				0462732D29FA4D84006273EB /* PlusViewController.swift */,
 				04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */,
+				0452C99F2A0CE9A6001C5275 /* ChannelViewController.swift */,
+				04C04CC12A13822D00103532 /* ListChannelTableViewController.swift */,
+				04C04CBD2A124BF500103532 /* ListChannelViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -498,6 +516,7 @@
 			files = (
 				045949D329F25E2200A2CF95 /* BaseViewController.swift in Sources */,
 				0482477D29F8D25300843EAB /* Constents.swift in Sources */,
+				04C04CC02A124E6100103532 /* ChannelCollectionViewCell.swift in Sources */,
 				0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */,
 				045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */,
 				0452C99C2A0CC57A001C5275 /* TextViewIAView.swift in Sources */,
@@ -514,12 +533,17 @@
 				045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */,
 				04965AB12A04E99C006D48EA /* NoteEditCell.swift in Sources */,
 				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,
+				0452C9A02A0CE9A6001C5275 /* ChannelViewController.swift in Sources */,
 				045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */,
+				04C04CC22A13822D00103532 /* ListChannelTableViewController.swift in Sources */,
 				045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */,
 				045949DD29F26FB000A2CF95 /* DiscoverViewController.swift in Sources */,
 				045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */,
+				04C04CBE2A124BF500103532 /* ListChannelViewController.swift in Sources */,
+				0452C99E2A0CE56D001C5275 /* PlusModel.swift in Sources */,
 				0462732C29FA4BF6006273EB /* BaseTabBarViewController.swift in Sources */,
 				04965AB32A06250D006D48EA /* NoteEditReusableView.swift in Sources */,
+				04C04CC42A13883B00103532 /* ChannelTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
