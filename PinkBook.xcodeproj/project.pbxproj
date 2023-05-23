@@ -29,6 +29,9 @@
 		045949DF29F26FCA00A2CF95 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */; };
 		045949E129F299C700A2CF95 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E029F299C700A2CF95 /* HomeModel.swift */; };
 		045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045949E229F6527900A2CF95 /* ListContainerViewController.swift */; };
+		045E32342A1B5AE200ACDD09 /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32332A1B5AE200ACDD09 /* POIViewController.swift */; };
+		045E32372A1C6B4200ACDD09 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32362A1C6B4200ACDD09 /* POITableViewCell.swift */; };
+		045E32392A1C839200ACDD09 /* POIRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32382A1C839200ACDD09 /* POIRequestLocation.swift */; };
 		0462731C29FA3BBE006273EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0462731B29FA3BBE006273EB /* README.md */; };
 		0462732529FA496D006273EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732729FA496D006273EB /* InfoPlist.strings */; };
 		0462732829FA4978006273EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732A29FA4978006273EB /* Localizable.strings */; };
@@ -72,6 +75,10 @@
 		045949DE29F26FCA00A2CF95 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		045949E029F299C700A2CF95 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		045949E229F6527900A2CF95 /* ListContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerViewController.swift; sourceTree = "<group>"; };
+		045E32332A1B5AE200ACDD09 /* POIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewController.swift; sourceTree = "<group>"; };
+		045E32352A1B6BAD00ACDD09 /* PinkBook-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinkBook-bridging-Header.h"; sourceTree = "<group>"; };
+		045E32362A1C6B4200ACDD09 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		045E32382A1C839200ACDD09 /* POIRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRequestLocation.swift; sourceTree = "<group>"; };
 		0462731B29FA3BBE006273EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0462731D29FA3D96006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0462731E29FA3D96006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -127,6 +134,7 @@
 		0459499D29F251B100A2CF95 /* PinkBook */ = {
 			isa = PBXGroup;
 			children = (
+				045949A429F251B100A2CF95 /* Main.storyboard */,
 				045949D129F25DD300A2CF95 /* Common */,
 				045949B629F259CB00A2CF95 /* Home */,
 				045949B729F259D100A2CF95 /* Cart */,
@@ -135,7 +143,6 @@
 				045949B529F259C100A2CF95 /* Me */,
 				0459499E29F251B100A2CF95 /* AppDelegate.swift */,
 				045949A029F251B100A2CF95 /* SceneDelegate.swift */,
-				045949A429F251B100A2CF95 /* Main.storyboard */,
 				045949AA29F251B200A2CF95 /* Assets.xcassets */,
 				045949AC29F251B200A2CF95 /* LaunchScreen.storyboard */,
 				045949AF29F251B200A2CF95 /* Info.plist */,
@@ -143,6 +150,7 @@
 				0462732729FA496D006273EB /* InfoPlist.strings */,
 				0462732A29FA4978006273EB /* Localizable.strings */,
 				0462731B29FA3BBE006273EB /* README.md */,
+				045E32352A1B6BAD00ACDD09 /* PinkBook-bridging-Header.h */,
 			);
 			path = PinkBook;
 			sourceTree = "<group>";
@@ -272,8 +280,8 @@
 				04965AB22A06250D006D48EA /* NoteEditReusableView.swift */,
 				0452C99B2A0CC57A001C5275 /* TextViewIAView.swift */,
 				0452C9992A0CC505001C5275 /* TextViewIAView.xib */,
-				04C04CBF2A124E6100103532 /* ChannelCollectionViewCell.swift */,
 				04C04CC32A13883B00103532 /* ChannelTableViewCell.swift */,
+				045E32362A1C6B4200ACDD09 /* POITableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +296,8 @@
 		045949C429F25ACD00A2CF95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04C04CBD2A124BF500103532 /* ListChannelViewController.swift */,
+				04C04CBF2A124E6100103532 /* ChannelCollectionViewCell.swift */,
 				0452C99D2A0CE56D001C5275 /* PlusModel.swift */,
 			);
 			path = Model;
@@ -300,7 +310,8 @@
 				04965AAE2A04E80D006D48EA /* NoteEditViewController.swift */,
 				0452C99F2A0CE9A6001C5275 /* ChannelViewController.swift */,
 				04C04CC12A13822D00103532 /* ListChannelTableViewController.swift */,
-				04C04CBD2A124BF500103532 /* ListChannelViewController.swift */,
+				045E32332A1B5AE200ACDD09 /* POIViewController.swift */,
+				045E32382A1C839200ACDD09 /* POIRequestLocation.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -518,6 +529,7 @@
 				0482477D29F8D25300843EAB /* Constents.swift in Sources */,
 				04C04CC02A124E6100103532 /* ChannelCollectionViewCell.swift in Sources */,
 				0459499F29F251B100A2CF95 /* AppDelegate.swift in Sources */,
+				045E32392A1C839200ACDD09 /* POIRequestLocation.swift in Sources */,
 				045949D929F25F5D00A2CF95 /* FontExtension.swift in Sources */,
 				0452C99C2A0CC57A001C5275 /* TextViewIAView.swift in Sources */,
 				0452C9962A0B5E37001C5275 /* LimitedTextView.swift in Sources */,
@@ -534,6 +546,7 @@
 				04965AB12A04E99C006D48EA /* NoteEditCell.swift in Sources */,
 				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,
 				0452C9A02A0CE9A6001C5275 /* ChannelViewController.swift in Sources */,
+				045E32342A1B5AE200ACDD09 /* POIViewController.swift in Sources */,
 				045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */,
 				04C04CC22A13822D00103532 /* ListChannelTableViewController.swift in Sources */,
 				045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */,
@@ -541,6 +554,7 @@
 				045949E329F6527900A2CF95 /* ListContainerViewController.swift in Sources */,
 				04C04CBE2A124BF500103532 /* ListChannelViewController.swift in Sources */,
 				0452C99E2A0CE56D001C5275 /* PlusModel.swift in Sources */,
+				045E32372A1C6B4200ACDD09 /* POITableViewCell.swift in Sources */,
 				0462732C29FA4BF6006273EB /* BaseTabBarViewController.swift in Sources */,
 				04965AB32A06250D006D48EA /* NoteEditReusableView.swift in Sources */,
 				04C04CC42A13883B00103532 /* ChannelTableViewCell.swift in Sources */,
@@ -715,6 +729,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinkBook/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "小红书ol";
+				INFOPLIST_KEY_NSCameraUsageDescription = "打开后可以拍照和视频";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "打开后可以使用麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "打开后可以存储照片和视频";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "打开后可以选择视频和照片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -732,6 +750,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PinkBook/PinkBook-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -749,6 +768,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinkBook/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "小红书ol";
+				INFOPLIST_KEY_NSCameraUsageDescription = "打开后可以拍照和视频";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "打开后可以使用麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "打开后可以存储照片和视频";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "打开后可以选择视频和照片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -766,6 +789,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PinkBook/PinkBook-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

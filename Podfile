@@ -17,6 +17,8 @@ target 'PinkBook' do
   pod 'Kingfisher', '~> 7.0'
   pod 'CHTCollectionViewWaterfallLayout'
   pod 'SKPhotoBrowser'
+  pod 'AMapLocation'#高德定位sdk
+  pod 'AMapSearch'#高德关键字搜索
 
 end
 

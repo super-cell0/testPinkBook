@@ -8,6 +8,10 @@
 import UIKit
 import JXSegmentedView
 
+//protocol ChannelViewControllerDelegate {
+//    func updateChannel(channel: String, subChannel: String)
+//}
+
 class ChannelViewController: BaseViewController {
     
     @IBOutlet weak var topView: UIView!
@@ -16,6 +20,8 @@ class ChannelViewController: BaseViewController {
     let segmentView = JXSegmentedView()
     //let segmentDataSource = JXSegmentedTitleDataSource()
     let segmentDataSource = JXSegmentedTitleImageDataSource()
+    
+    //var channelDelegate: ChannelViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +47,7 @@ class ChannelViewController: BaseViewController {
 
         segmentDataSource.titles = channels
         segmentDataSource.titleSelectedColor = .label
-        //segmentDataSource.titleNormalColor = .opaqueSeparator
+        segmentDataSource.titleNormalColor = .opaqueSeparator
         segmentDataSource.titleNormalFont = .myFont(ofSize: 14, weight: .bold)
         segmentDataSource.isTitleColorGradientEnabled = true
         segmentDataSource.isItemSpacingAverageEnabled = true
@@ -76,6 +82,7 @@ extension ChannelViewController: JXSegmentedListContainerViewDataSource {
     func listContainerView(_ listContainerView: JXSegmentedListContainerView, initListAt index: Int) -> JXSegmentedListContainerViewListDelegate {
         //let vc = ListChannelTableViewController()
         let vc = storyboard?.instantiateViewController(withIdentifier: "ListChannelTableViewID") as! ListChannelTableViewController
+        vc.channels = channels[index]
         vc.subChannels = subAllChannels[index]
 
         return vc

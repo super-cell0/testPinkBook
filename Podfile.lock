@@ -1,4 +1,9 @@
 PODS:
+  - AMapFoundation (1.8.0)
+  - AMapLocation (2.9.0):
+    - AMapFoundation (>= 1.7.0)
+  - AMapSearch (9.5.0):
+    - AMapFoundation (>= 1.8.0)
   - CHTCollectionViewWaterfallLayout (0.9.10):
     - CHTCollectionViewWaterfallLayout/Swift (= 0.9.10)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
@@ -42,6 +47,8 @@ PODS:
     - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
+  - AMapLocation
+  - AMapSearch
   - CHTCollectionViewWaterfallLayout
   - CombineCocoa
   - DZNEmptyDataSet
@@ -56,6 +63,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
     - CHTCollectionViewWaterfallLayout
     - CombineCocoa
     - DZNEmptyDataSet
@@ -71,6 +81,9 @@ SPEC REPOS:
     - YPImagePicker
 
 SPEC CHECKSUMS:
+  AMapFoundation: f48153f724114b58da9b01875ab88a1f6856e3db
+  AMapLocation: f5eb11e11c62f0f599f80b578eec8a1f70deb985
+  AMapSearch: e0c81206b8ac1d27ef349095a96ea6398e3a0da3
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -85,6 +98,6 @@ SPEC CHECKSUMS:
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
 
-PODFILE CHECKSUM: df7c5658e715afb4ec68c89aeaba1b80e33863e1
+PODFILE CHECKSUM: 6d5aa8338db298480ba856b3edce3bd492b60744
 
 COCOAPODS: 1.11.3

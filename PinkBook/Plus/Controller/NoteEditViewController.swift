@@ -11,6 +11,7 @@ import AVKit
 import MBProgressHUD
 import SKPhotoBrowser
 
+
 class NoteEditViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -18,6 +19,9 @@ class NoteEditViewController: UIViewController {
     @IBOutlet weak var titleCountLabel: UILabel!
     @IBOutlet weak var textView: LimitedTextView!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var channelLabel: UILabel!
+    @IBOutlet weak var subChannelLabel: UILabel!
     
     var photos = [
         UIImage(named: "2")!,
@@ -28,10 +32,19 @@ class NoteEditViewController: UIViewController {
     var dragIndexPath = IndexPath(item: 0, section: 0)
     var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
     
+    var channel = ""
+    var subChannel = ""
+    
+    let locationManager = CLLocationManager()
+    
     //MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        locationManager.requestWhenInUseAuthorization()
+        AMapLocationManager.updatePrivacyShow(AMapPrivacyShowStatus.didShow, privacyInfo: AMapPrivacyInfoStatus.didContain)
+        AMapLocationManager.updatePrivacyAgree(AMapPrivacyAgreeStatus.didAgree)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.dragDelegate = self
@@ -79,18 +92,27 @@ class NoteEditViewController: UIViewController {
         titleCountLabel.text = String(kMaxNoteEditTitleCount - titleTextField.unwrappedText.count)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? ChannelViewController {
+        }
+
     }
-    */
+
 
 }
+
+//extension NoteEditViewController: ChannelViewControllerDelegate {
+//    func updateChannel(channel: String, subChannel: String) {
+//        self.channel = channel
+//        self.subChannel = subChannel
+//
+//        channelLabel.text = subChannel
+//        channelLabel.textColor = .mainColor
+//        subChannelLabel.isHidden = true
+//    }
+//
+//
+//}
 
 //MARK:  UICollectionViewDataSource
 extension NoteEditViewController: UICollectionViewDelegate, UICollectionViewDataSource {

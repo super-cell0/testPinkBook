@@ -36,6 +36,12 @@ class ListChannelTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+//        let vc = parent as! ChannelViewController
+//        vc.channelDelegate?.updateChannel(channel: "channels", subChannel: subChannels[indexPath.row])
+        
+        //print(presentingViewController)
+        dismiss(animated: true)
     }
     
 

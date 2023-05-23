@@ -70,6 +70,7 @@ struct HUD {
         guard let view = keyWindow else { return }
         MBProgressHUD.hide(for: view, animated: true)
     }
+    
 }
 
 extension UIViewController {
@@ -83,6 +84,21 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func showLoadHUD(title: String? = nil) {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = title
+        hud.contentColor = .mainColor
+        hud.bezelView.color = .opaqueSeparator
+        hud.bezelView.style = .blur
+
+    }
+    
+    func hideLoadHUD() {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
     }
 }
 
