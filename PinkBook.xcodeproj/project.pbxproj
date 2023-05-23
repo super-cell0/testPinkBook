@@ -375,9 +375,9 @@
 		045949D129F25DD300A2CF95 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0482477C29F8D25300843EAB /* Constents.swift */,
 				045949D229F25E2200A2CF95 /* BaseViewController.swift */,
 				045949D429F25E8800A2CF95 /* BaseViewModel.swift */,
-				0482477C29F8D25300843EAB /* Constents.swift */,
 				045949D629F25EED00A2CF95 /* ColorExtension.swift */,
 				045949D829F25F5D00A2CF95 /* FontExtension.swift */,
 				0462732B29FA4BF6006273EB /* BaseTabBarViewController.swift */,

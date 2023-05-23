@@ -105,3 +105,13 @@ extension UIViewController {
 extension UITextField {
     var unwrappedText: String { text ?? ""}
 }
+
+extension Optional where Wrapped == String {
+    var unwrappedText: String { self ?? ""}
+}
+
+extension String {
+    var isBlank: Bool {
+        self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+}

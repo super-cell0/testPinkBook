@@ -465,10 +465,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Vjh-lk-ZOh"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="MSs-ce-XgV" id="xSb-DN-Kpk"/>
-                                </connections>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zoK-5h-uYW">
                                 <rect key="frame" x="0.0" y="69" width="393" height="783"/>
@@ -535,7 +532,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="zoK-5h-uYW" id="wKr-U5-7y2"/>
+                        <outlet property="searchBar" destination="Wfy-U8-dWI" id="HyZ-CT-yqh"/>
+                        <outlet property="tableView" destination="zoK-5h-uYW" id="dgb-dX-4q2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFW-4R-PhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
