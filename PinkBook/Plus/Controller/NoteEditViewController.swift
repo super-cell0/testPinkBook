@@ -22,7 +22,13 @@ class NoteEditViewController: UIViewController {
     
     @IBOutlet weak var channelLabel: UILabel!
     @IBOutlet weak var subChannelLabel: UILabel!
+    @IBOutlet weak var channelIconImageView: UIImageView!
+    @IBOutlet weak var adressIconImageView: UIImageView!
+    @IBOutlet weak var adressLabel: UILabel!
     
+    @IBOutlet weak var draftButton: UIButton!
+    @IBOutlet weak var postNoteButton: UIButton!
+    ///图片
     var photos = [
         UIImage(named: "2")!,
         UIImage(named: "3")!,
@@ -31,15 +37,21 @@ class NoteEditViewController: UIViewController {
     var isVideo: Bool { videoURL != nil }
     var dragIndexPath = IndexPath(item: 0, section: 0)
     var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
-    
-    var channel = ""
-    var subChannel = ""
+    ///话题标签
+    var channel = "no channel"
+    ///话题内容
+    var subChannel = "no subChannel"
+    ///地址
+    var POIName = ""
     
     let locationManager = CLLocationManager()
     
     //MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        postNoteButton.layer.cornerRadius = 22
 
         locationManager.requestWhenInUseAuthorization()
         AMapLocationManager.updatePrivacyShow(AMapPrivacyShowStatus.didShow, privacyInfo: AMapPrivacyInfoStatus.didContain)
@@ -69,6 +81,13 @@ class NoteEditViewController: UIViewController {
         textViewIAView.maxCountLabel.text = "/\(kMaxNoteEditTextViewCount)"
         textView.delegate = self
         
+        //sandbox的总路径
+        print(NSHomeDirectory())
+        //文件的路径
+        //print(NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0])
+        //文件的url
+        //print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0])
+        
     }
     
     @IBAction func TextFieldEditDidBegin(_ sender: Any) {
@@ -92,8 +111,44 @@ class NoteEditViewController: UIViewController {
         titleCountLabel.text = String(kMaxNoteEditTitleCount - titleTextField.unwrappedText.count)
     }
     
+    //TODO
+    @IBAction func draftButton(_ sender: Any) {
+        
+        guard textViewIAView.currentTextCount <= kMaxNoteEditTextViewCount else {
+            
+            HUD.show("正文最多只能输入\(kMaxNoteEditTextViewCount)字")
+            return
+        }
+            
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let draftNote = DraftNote(context: context)
+        
+        if isVideo {
+            
+        }
+        draftNote.coverPhoto = photos[0].pngData()
+        draftNote.title = self.titleTextField.exactText
+        draftNote.text = self.textView.exactText
+        draftNote.channel = self.channel
+        draftNote.subChannel = self.subChannel
+        draftNote.poiName = self.POIName
+        draftNote.upDateAt = Date()
+        
+        appDelegate.saveContext()
+    }
+    
+    @IBAction func postNoteButton(_ sender: Any) {
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ChannelViewController {
+            self.view.endEditing(true)
+            
+        } else if let vc = segue.destination as? POIViewController {
+            vc.delegate = self
+            vc.poiName = POIName
         }
 
     }
@@ -113,6 +168,26 @@ class NoteEditViewController: UIViewController {
 //
 //
 //}
+
+extension NoteEditViewController: POIViewControllerDelegate {
+    func updatePOIName(name: String) {
+        
+        if POIName == kPOIs[0][0] {
+            self.POIName = ""
+            self.adressIconImageView.tintColor = .label
+            self.adressLabel.text = "添加地点"
+            self.adressLabel.textColor = .label
+        } else {
+            self.POIName = name
+            self.adressLabel.text = self.POIName
+            self.adressLabel.textColor = .mainColor
+            self.adressIconImageView.tintColor = .mainColor
+        }
+                
+    }
+    
+    
+}
 
 //MARK:  UICollectionViewDataSource
 extension NoteEditViewController: UICollectionViewDelegate, UICollectionViewDataSource {

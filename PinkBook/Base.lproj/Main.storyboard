@@ -203,7 +203,7 @@
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wPv-6B-BA6">
                                                                                         <rect key="frame" x="0.0" y="2.3333333333333321" width="15.666666666666666" height="38.333333333333343"/>
-                                                                                        <color key="tintColor" name="mainColor"/>
+                                                                                        <color key="tintColor" systemColor="labelColor"/>
                                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参与话题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-2P-qG1">
@@ -264,6 +264,7 @@
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-em-LvP">
                                                                                         <rect key="frame" x="0.0" y="2.3333333333333321" width="15.666666666666666" height="39.333333333333343"/>
+                                                                                        <color key="tintColor" systemColor="labelColor"/>
                                                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                                                     </imageView>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加定位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-pv-st6">
@@ -322,19 +323,58 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="lvJ-QS-6lY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="aUC-JC-TAG"/>
                             </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Ka-Kg-2vm">
+                                <rect key="frame" x="16" y="774" width="361" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm0-4K-ywR">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="存草稿">
+                                            <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="draftButton:" destination="ueV-df-T1H" eventType="touchUpInside" id="5ut-z1-RLY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW8-Xk-gur">
+                                        <rect key="frame" x="56" y="0.0" width="305" height="44"/>
+                                        <color key="backgroundColor" name="mainColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="发布笔记">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="postNoteButton:" destination="ueV-df-T1H" eventType="touchUpInside" id="m3b-4S-JGx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sin-ww-pTO"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bSs-TT-PDq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e8V-Kd-W3b" firstAttribute="top" secondItem="bSs-TT-PDq" secondAttribute="top" id="25g-Lz-PjN"/>
                             <constraint firstItem="e8V-Kd-W3b" firstAttribute="leading" secondItem="TEJ-Dv-KV7" secondAttribute="leading" id="788-XL-eeC"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ka-Kg-2vm" secondAttribute="trailing" constant="16" id="QMn-O5-b0a"/>
+                            <constraint firstItem="bSs-TT-PDq" firstAttribute="bottom" secondItem="7Ka-Kg-2vm" secondAttribute="bottom" id="RxK-6e-9Pk"/>
                             <constraint firstAttribute="trailing" secondItem="e8V-Kd-W3b" secondAttribute="trailing" id="fUL-7j-x0g"/>
                             <constraint firstAttribute="bottom" secondItem="e8V-Kd-W3b" secondAttribute="bottom" id="iWS-a1-PbW"/>
+                            <constraint firstItem="7Ka-Kg-2vm" firstAttribute="leading" secondItem="TEJ-Dv-KV7" secondAttribute="leading" constant="16" id="mtP-5q-kam"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adressIconImageView" destination="h4V-em-LvP" id="FaM-1s-VCc"/>
+                        <outlet property="adressLabel" destination="aeQ-pv-st6" id="nq1-Ba-A11"/>
+                        <outlet property="channelIconImageView" destination="wPv-6B-BA6" id="VFn-91-bHS"/>
                         <outlet property="channelLabel" destination="Sgh-2P-qG1" id="eri-Re-fGt"/>
                         <outlet property="collectionView" destination="98R-fj-CHe" id="a03-Cu-ogE"/>
+                        <outlet property="draftButton" destination="Nm0-4K-ywR" id="wce-AE-Cim"/>
+                        <outlet property="postNoteButton" destination="mW8-Xk-gur" id="KsX-MV-HK1"/>
                         <outlet property="scrollView" destination="e8V-Kd-W3b" id="sIx-Nn-wlz"/>
                         <outlet property="subChannelLabel" destination="uOS-yK-Ryi" id="fal-Vy-mkX"/>
                         <outlet property="textView" destination="qNi-5V-Yde" id="zoV-kQ-I1e"/>

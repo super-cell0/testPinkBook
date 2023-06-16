@@ -11,12 +11,6 @@ extension POIViewController {
     
     ///高德定位
     func requestLocation() {
-        //带逆地理信息的一次定位（返回坐标和地址信息）
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        //定位超时时间，最低2s，此处设置为2s
-        locationManager.locationTimeout = 10
-        //逆地理请求超时时间，最低2s，此处设置为2s
-        locationManager.reGeocodeTimeout = 10
         
         //self.showLoadHUD()
         DispatchQueue.main.async {
@@ -62,9 +56,10 @@ extension POIViewController {
                 self.latitude = location.coordinate.latitude
                 self.longitude = location.coordinate.longitude
                 
-                self.footer.setRefreshingTarget(self, refreshingAction: #selector(self.aroundSearchRequestToMJ))
+                //self.footer.setRefreshingTarget(self, refreshingAction: #selector(self.aroundSearchRequestToMJ))
+                self.setAroundSearchFooter()
                 //检索周边POI
-                self.mapSearch?.aMapPOIAroundSearch(self.aroundSearchRequest)
+                self.makeAroundSearch()
             }
             
             if let reGeocode = reGeocode {
@@ -90,12 +85,25 @@ extension POIViewController {
         
     }
     
+    func makeAroundSearch(page: Int = 1) {
+        self.aroundSearchRequest.page = page
+        self.mapSearch?.aMapPOIAroundSearch(self.aroundSearchRequest)
+    }
     
 }
 
 extension POIViewController {
-    @objc func aroundSearchRequestToMJ() {
-        
-        footer.endRefreshing()
+    
+    func setAroundSearchFooter() {
+        self.footer.resetNoMoreData()
+        self.footer.setRefreshingTarget(self, refreshingAction: #selector(aroundSearchRequestToMJ))
     }
+    
+    
+    @objc func aroundSearchRequestToMJ() {
+        self.currentPage += 1
+        self.makeAroundSearch(page: currentPage)
+        endRefreshing(currentPage)
+    }
+    
 }

@@ -32,6 +32,7 @@
 		045E32342A1B5AE200ACDD09 /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32332A1B5AE200ACDD09 /* POIViewController.swift */; };
 		045E32372A1C6B4200ACDD09 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32362A1C6B4200ACDD09 /* POITableViewCell.swift */; };
 		045E32392A1C839200ACDD09 /* POIRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E32382A1C839200ACDD09 /* POIRequestLocation.swift */; };
+		045E323B2A1EF2FC00ACDD09 /* POIKeywordsSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E323A2A1EF2FC00ACDD09 /* POIKeywordsSearchRequest.swift */; };
 		0462731C29FA3BBE006273EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0462731B29FA3BBE006273EB /* README.md */; };
 		0462732529FA496D006273EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732729FA496D006273EB /* InfoPlist.strings */; };
 		0462732829FA4978006273EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0462732A29FA4978006273EB /* Localizable.strings */; };
@@ -79,6 +80,7 @@
 		045E32352A1B6BAD00ACDD09 /* PinkBook-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinkBook-bridging-Header.h"; sourceTree = "<group>"; };
 		045E32362A1C6B4200ACDD09 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
 		045E32382A1C839200ACDD09 /* POIRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRequestLocation.swift; sourceTree = "<group>"; };
+		045E323A2A1EF2FC00ACDD09 /* POIKeywordsSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIKeywordsSearchRequest.swift; sourceTree = "<group>"; };
 		0462731B29FA3BBE006273EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0462731D29FA3D96006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0462731E29FA3D96006273EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				04C04CC12A13822D00103532 /* ListChannelTableViewController.swift */,
 				045E32332A1B5AE200ACDD09 /* POIViewController.swift */,
 				045E32382A1C839200ACDD09 /* POIRequestLocation.swift */,
+				045E323A2A1EF2FC00ACDD09 /* POIKeywordsSearchRequest.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				045949E129F299C700A2CF95 /* HomeModel.swift in Sources */,
 				0452C9A02A0CE9A6001C5275 /* ChannelViewController.swift in Sources */,
 				045E32342A1B5AE200ACDD09 /* POIViewController.swift in Sources */,
+				045E323B2A1EF2FC00ACDD09 /* POIKeywordsSearchRequest.swift in Sources */,
 				045949D729F25EED00A2CF95 /* ColorExtension.swift in Sources */,
 				04C04CC22A13822D00103532 /* ListChannelTableViewController.swift in Sources */,
 				045949D529F25E8800A2CF95 /* BaseViewModel.swift in Sources */,

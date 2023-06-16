@@ -14,6 +14,5 @@
 //高德定位
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
-
 //高德检索周边
 #import <AMapSearchKit/AMapSearchKit.h>
