@@ -5,8 +5,9 @@
 //  Created by mac on 2023/5/5.
 //
 
-import Foundation
+import UIKit
 import MBProgressHUD
+import DateToolsSwift
 
 extension Bundle {
     var appName: String {
@@ -124,5 +125,54 @@ extension Optional where Wrapped == String {
 extension String {
     var isBlank: Bool {
         self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+}
+
+extension UIImage {
+    
+    convenience init?(data: Data?) {
+        if let unwrappedData = data {
+            self.init(data: unwrappedData)
+        } else {
+            return nil
+        }
+    }
+    
+    enum JpegQuqlity: CGFloat {
+        case lowest = 0
+        case low = 0.25
+        case midium = 0.5
+        case high = 0.75
+        case highest = 1
+    }
+    
+    func jpeg(jpegQuqlity:JpegQuqlity ) -> Data? {
+        jpegData(compressionQuality: jpegQuqlity.rawValue)
+    }
+}
+
+extension Date {
+    var formattedDate: String {
+        let currentYear = Date().year
+        
+        if year == currentYear {
+            //今年
+            if isToday {
+                if minutesAgo > 10 {
+                    return "今天 \(format(with: "HH:mm"))"
+                } else {
+                    return timeAgoSinceNow
+                }
+            } else if isYesterday {
+                return "昨天 \(format(with: "HH:mm"))"
+            } else {
+                return format(with: "MM-dd")
+            }
+        } else if year < currentYear {
+            //去年或更早
+            return format(with: "yyyy-MM-dd")
+        } else {
+            return "未来"
+        }
     }
 }

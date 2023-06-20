@@ -125,9 +125,19 @@ class NoteEditViewController: UIViewController {
         let draftNote = DraftNote(context: context)
         
         if isVideo {
-            
+            draftNote.video = try? Data(contentsOf: videoURL!)
         }
-        draftNote.coverPhoto = photos[0].pngData()
+        draftNote.coverPhoto = photos[0].jpeg(jpegQuqlity: .high)
+        //draftNote.photos =
+        
+        var encodePhotos: [Data] = []
+        for photo in self.photos {
+            if let pngData = photo.pngData() {
+                encodePhotos.append(pngData)
+            }
+        }
+        draftNote.photos = try? JSONEncoder().encode(encodePhotos)
+        
         draftNote.title = self.titleTextField.exactText
         draftNote.text = self.textView.exactText
         draftNote.channel = self.channel
@@ -143,7 +153,7 @@ class NoteEditViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? ChannelViewController {
+        if let _ = segue.destination as? ChannelViewController {
             self.view.endEditing(true)
             
         } else if let vc = segue.destination as? POIViewController {

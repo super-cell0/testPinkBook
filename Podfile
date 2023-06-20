@@ -19,6 +19,7 @@ target 'PinkBook' do
   pod 'SKPhotoBrowser'
   pod 'AMapLocation'#高德定位sdk
   pod 'AMapSearch'#高德关键字搜索
+  pod 'DateToolsSwift'
 
 end
 

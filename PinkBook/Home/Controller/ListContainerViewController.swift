@@ -8,8 +8,10 @@
 import UIKit
 import JXSegmentedView
 import CHTCollectionViewWaterfallLayout
+import CoreData
 
 private let kReuseIdentifier = "waterfallID"
+private let kDraftNoteIdentifier = "DraftNoteIdentifier"
 
 class ListContainerViewController: BaseViewController {
     
@@ -17,6 +19,7 @@ class ListContainerViewController: BaseViewController {
         let layout = UICollectionViewFlowLayout()
         let c = UICollectionView(frame: .zero, collectionViewLayout: layout)
         c.register(ListContainerCollectionViewCell.self, forCellWithReuseIdentifier: kReuseIdentifier)
+        c.register(DraftNoteCollectionViewCell.self, forCellWithReuseIdentifier: kDraftNoteIdentifier)
         return c
     }()
     
@@ -43,12 +46,16 @@ class ListContainerViewController: BaseViewController {
         UIImage(named: "cqs")!,
     ]
     
+    var isDraft = true
+    var draftNotes: [DraftNote] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
 
+        getDraftNotes()
     }
     
 
@@ -95,18 +102,46 @@ class ListContainerViewController: BaseViewController {
 
 extension ListContainerViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        if isDraft {
+            return draftNotes.count
+        } else {
+            return photos.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kReuseIdentifier, for: indexPath) as! ListContainerCollectionViewCell
         
-        cell.imageView.image = photos[indexPath.item]
-        
-        return cell
+        if isDraft {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDraftNoteIdentifier, for: indexPath) as! DraftNoteCollectionViewCell
+            
+            cell.contentView.layer.borderWidth = 0.5
+            cell.contentView.layer.borderColor = UIColor.opaqueSeparator.cgColor
+            cell.contentView.layer.cornerRadius = 5
+            cell.draftNote = self.draftNotes[indexPath.item]
+            
+            return cell
+            
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kReuseIdentifier, for: indexPath) as! ListContainerCollectionViewCell
+            
+            cell.imageView.image = photos[indexPath.item]
+            
+            return cell
+
+        }
     }
     
     
+}
+
+extension ListContainerViewController {
+    func getDraftNotes() {
+        let appDeleagte = UIApplication.shared.delegate as! AppDelegate
+        let context = appDeleagte.persistentContainer.viewContext
+        
+        let draftNotes = try! context.fetch(DraftNote.fetchRequest() as NSFetchRequest<DraftNote>)
+        self.draftNotes = draftNotes
+    }
 }
 
 extension ListContainerViewController: CHTCollectionViewDelegateWaterfallLayout {
